@@ -1,7 +1,15 @@
 h1 {
     text-align: center;
-    color: navy;
+    color: rgb(243, 89, 89);
+    border: rebeccapurple;
 }
 body {
-    background-color: rgb(194, 221, 221);
+    background-image: url(bokeh336478.jpg);
+}
+form {
+    text-align: center;
+    color: rgb(243, 89, 89);
+}
+ul{
+    color: rgb(243, 89, 89);
 }
