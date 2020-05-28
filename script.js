@@ -21,7 +21,7 @@ function addElement(list) {
         let newLi = document.createElement("li");
         let newContent = document.createTextNode(element);
         newLi.appendChild(newContent);
-        let currentUl = document.getElementById("li")
+        let currentUl = document.getElementById("list")
         document.body.insertBefore(newLi,currentUl);
 
     })
