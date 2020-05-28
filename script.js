@@ -25,6 +25,7 @@ if (localStorage.getItem('test') == "key") {
 }
 
 fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall').then(response => response.json()).then(data => addElement(data))
+
 function addElement(list) {
     list.forEach( function (element) {
         let newLi = document.createElement("li");
@@ -36,10 +37,10 @@ function addElement(list) {
     })
 }
 
-function pressingSubmit(_ranMessage){
+function pressingIt(ranMessage){
     fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall', {
     method: 'POST',
-    body: JSON.stringify({message: _ranMessage.value})
+    body: JSON.stringify({message: ranMessage.value})
     }).then(function (response) {
     if (response.status == 200) {
         console.log("Ok!")
