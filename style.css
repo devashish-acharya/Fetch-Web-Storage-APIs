@@ -98,7 +98,7 @@ ul li {
 /* ! have the list items occupy enough vertical space to cover (viewport - vertical offset)
 otherwise the elements would collapse to the top once the page reaches the last item
 */
-@for $counter from 1 through 12 {
+@for $counter from 1 through 9999999999 {
     ol li:nth-child(#{$counter}) {
         top: #{($counter - 1) * 7.5vh};
         height: #{100vh - ($counter - 1) * 7.5vh};
