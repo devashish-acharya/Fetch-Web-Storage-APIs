@@ -1,22 +1,18 @@
 h1 {
     text-align: center;
-    color: rgb(243, 89, 89);
-    border: rebeccapurple;
+    color: rgb(182, 182, 182);
+    border: rgb(182, 182, 182);
 }
 body {
-    background-image: url(blue2852879.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 form {
     text-align: center;
-    color: rgb(243, 89, 89);
+    color: rgb(182, 182, 182);
 }
 
-ul {
-    counter-reset: index;  
-    padding: 0;
-    max-width: 300px;
-  }
-  
   /* List element */
   li {
     counter-increment: index; 
@@ -37,14 +33,48 @@ ul {
     padding-right: 12px;
     font-variant-numeric: tabular-nums;
     align-self: flex-start;
-    background-image: linear-gradient(to bottom, aquamarine, orangered);
-    background-attachment: fixed;
+    	background: linear-gradient(-25deg, #ff0000, #ff0055, #ff00ba, #d300ff, #3300ff, #00e3ff, #00ff35, #fffa00, #ff7d00, #ff0000, #d300ff );
+	background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
   
-  
-  /* Element separation */
-  li + li {
-    border-top: 1px solid rgba(255,255,255,0.2);
-  }
+body{
+    background: linear-gradient(54deg, #000000, #000000, #a30000);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+li{
+    font-size: larger;
+}
