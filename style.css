@@ -55,8 +55,8 @@ form {
 }
   
 body{
-    background: linear-gradient(54deg, #190041, rgb(1, 44, 1),  #383838, rgb(75, 54, 54), #410000);
-    background-size: 600% 600%;
+    background: linear-gradient(54deg, #070013, rgb(0, 14, 0),  #131313, rgb(17, 8, 8), #130000);
+    background-size: 6000000% 100%;
 
     -webkit-animation: AnimationName 4s ease infinite;
     -moz-animation: AnimationName 4s ease infinite;
