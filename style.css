@@ -1,7 +1,8 @@
 h1 {
     text-align: center;
-    color: rgb(182, 182, 182);
-    border: rgb(182, 182, 182);
+    color: rgb(185, 182, 182);
+    font-size: 50px;
+    font-family: fantasy;
 }
 body {
     display: flex;
@@ -10,7 +11,9 @@ body {
 }
 form {
     text-align: center;
-    color: rgb(182, 182, 182);
+    color: rgb(243, 171, 171);
+    font-size: 30px;
+    font-family: fantasy;
 }
 
   /* List element */
@@ -26,7 +29,7 @@ form {
   /* Element counter */
   li::before {
     content: counters(index, ".", decimal-leading-zero);
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: right;
     font-weight: bold;
     min-width: 50px;
@@ -52,12 +55,12 @@ form {
 }
   
 body{
-    background: linear-gradient(54deg, #000000, #000000, #a30000);
+    background: linear-gradient(54deg, #190041, rgb(1, 44, 1),  #383838, rgb(75, 54, 54), #410000);
     background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 7s ease infinite;
-    -moz-animation: AnimationName 7s ease infinite;
-    animation: AnimationName 7s ease infinite;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
@@ -75,6 +78,13 @@ body{
     100%{background-position:0% 50%}
 }
 
-li{
-    font-size: larger;
+
+   li{
+    font-size: xx-large;
+    color: rgb(243, 171, 171);
+    font-family: cursive;
+    }
+
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
