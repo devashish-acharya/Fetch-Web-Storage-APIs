@@ -29,7 +29,7 @@ form {
   /* Element counter */
   li::before {
     content: counters(index, ".", decimal-leading-zero);
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: right;
     font-weight: bold;
     min-width: 50px;
@@ -80,7 +80,7 @@ body{
 
 
    li{
-    font-size: xx-large;
+    font-size: 25px;
     color: rgb(243, 171, 171);
     font-family: cursive;
     }
